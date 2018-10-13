@@ -1,14 +1,25 @@
 body {
-    background-image: url("../images/gravel.png");
+    background-image: url("../images/background.jpg");
 }
 
-h1, h2 {
+h1, h2, p {
+    font-family: Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
 h1 {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 0;
 }
 
 .wrapper {
@@ -18,20 +29,15 @@ h1 {
 }
 
 .header-bkgd {
-    background: transparent;
-    width: 100%;
-}
-
-.txt-bkgd {
-    display: block;
-    background: transparent;
-    height: 250px;
-    width: 100%;
+    background:transparent;
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .img-bkgd {
     background: transparent;
-    width: 50%;
+    width: 775px;
     
 }
 
@@ -39,4 +45,9 @@ h1 {
     height: 250px;
     width: 175px;
     margin: 0 15px 0 0;
+    /* border: 3px solid black; */
+}
+
+.box{
+    margin-top: 50px;
 }

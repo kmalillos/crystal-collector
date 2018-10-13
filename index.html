@@ -5,7 +5,7 @@
     <title>Crystal Collector by Kaylah Malillos</title>
     <meta charset="UTF-8">
     <meta>
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -13,6 +13,14 @@
 
 <div class="wrapper header-bkgd"> 
     <h1>Crystals Collector</h1>
+
+    <br><br>
+
+    <p> The four crystals below have random Crystal Value between 1 and 12. 
+        Selecting a crystal will increase User Score by its value. 
+        You win the game by matching your total User Score to the Target School.
+        <br><br>
+        The Target Score and Crystal Values will have new updated values after each round. </p>
 </div>
 
     
@@ -23,9 +31,12 @@
     <img class="crystal-img" id="crystal-4" src="assets/images/crystal-4.jpg" alt="">
 </div>
 
-<div class="txt-bkgd"> 
+<div class="box"> 
     <h2>Target Score: <span id="targetScore-text"></span> </h2>
     <h2>User Score: <span id="userScore-text">0</span> </h2>
+</div>
+
+<div class="box">
     <h2>Wins: <span id="wins-text">0</span> </h2>
     <h2>Losses: <span id="losses-text">0</span> </h2>
 </div>
