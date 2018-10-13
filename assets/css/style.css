@@ -1,5 +1,42 @@
-.crystal-image {
-    height: 300px;
-    width: 225px;
-    margin: 0 25px;
+body {
+    background-image: url("../images/gravel.png");
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-bkgd {
+    background: transparent;
+    width: 100%;
+}
+
+.txt-bkgd {
+    display: block;
+    background: transparent;
+    height: 250px;
+    width: 100%;
+}
+
+.img-bkgd {
+    background: transparent;
+    width: 50%;
+    
+}
+
+.crystal-img {
+    height: 250px;
+    width: 175px;
+    margin: 0 15px 0 0;
 }

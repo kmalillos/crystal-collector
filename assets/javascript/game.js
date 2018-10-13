@@ -49,7 +49,7 @@ targetScoreSelector();
 
 crystalValueSelector();
 
-$(".crystal-image").on("click", function () {
+$(".crystal-img").on("click", function () {
     //alert("This is a crystal");
 
     //make user score based on random crystal values
