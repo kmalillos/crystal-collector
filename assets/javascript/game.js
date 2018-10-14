@@ -23,7 +23,7 @@ var crystalArray = [
     // to CREATE crystal images
 function createCrystals() {
     for (var i=0; i<crystalArray.length; i++) {
-        var randomVal = Math.floor(Math.random()*12 + 1);
+    var randomVal = Math.floor(Math.random()*12 + 1);
         var img = $("<img>")
             img.addClass('crystal-img');
             img.attr('id', 'crystal-'+(i+1));
@@ -42,10 +42,10 @@ function targetScoreSelector () {
 
     // to UPDATE crystal values after each game
 function updateCrystals() {
-       $("#crystal-1").attr('val', Math.floor(Math.random()*12 + 1))
-       $("#crystal-2").attr('val', Math.floor(Math.random()*12 + 1))
-       $("#crystal-3").attr('val', Math.floor(Math.random()*12 + 1))
-       $("#crystal-4").attr('val', Math.floor(Math.random()*12 + 1))
+    for (var i=0; i<crystalArray.length; i++) {
+        var randomVal = Math.floor(Math.random()*12 + 1);
+        $("#crystal-"+ i).attr('val', randomVal)
+    }
 }
 
     // to RESET game
