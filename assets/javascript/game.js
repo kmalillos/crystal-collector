@@ -36,19 +36,21 @@ function createCrystals() {
     // for TARGET SCORE to get a RANDOM NUM between 19-120 (120-19 = 101)
 function targetScoreSelector () {
     targetScore = Math.floor(Math.random()*101 + 19); 
-        console.log("Target Score: " + targetScore);
+        // console.log("Target Score: " + targetScore);
     $("#targetScore-text").text(targetScore);
 }
 
-    // for CRYSTAL to get a RANDOM VALUE between 1-12 
-        // var crystalValueSelector = function () {
-        //     $("#crystal-1").attr('val',  Math.floor(Math.random()*12 + 1));
-        //     $("#crystal-2").attr('val',  Math.floor(Math.random()*12 + 1));
-        //     $("#crystal-3").attr('val',  Math.floor(Math.random()*12 + 1));
-        //     $("#crystal-4").attr('val',  Math.floor(Math.random()*12 + 1));
-        // }
+    // to UPDATE crystal values after each game
+function updateCrystals() {
+       $("#crystal-1").attr('val', Math.floor(Math.random()*12 + 1))
+       $("#crystal-2").attr('val', Math.floor(Math.random()*12 + 1))
+       $("#crystal-3").attr('val', Math.floor(Math.random()*12 + 1))
+       $("#crystal-4").attr('val', Math.floor(Math.random()*12 + 1))
+}
 
+    // to RESET game
 function resetGame () {
+    updateCrystals();
     targetScoreSelector();
     userScore=0;
     $("#userScore-text").text(userScore);
@@ -63,14 +65,14 @@ createCrystals();
 targetScoreSelector();
 
 $(".crystal-img").on("click", function () {
-    //alert("This is a crystal");
+    //console.log("This is a crystal");
 
     //make user score based on random crystal values
     var crystalVal = $(this).attr('val');
         console.log("Crystal Value: " + crystalVal);
 
     userScore += parseInt(crystalVal);
-        console.log("User Score: " + userScore);
+        // console.log("User Score: " + userScore);
     $("#userScore-text").text(userScore);
 
     if (userScore === targetScore) {
@@ -80,7 +82,7 @@ $(".crystal-img").on("click", function () {
         resetGame();
 
     } else if (userScore > targetScore) {
-        alert("You lose!");
+        alert("Final User Score: " + userScore + ". You busted! Try again!");
         losses++;
         $("#losses-text").text(losses);
         resetGame();
