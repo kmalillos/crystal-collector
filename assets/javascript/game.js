@@ -1,8 +1,6 @@
 //The random number shown at the start of the game should be between 19 - 120.
 //Each crystal should have a random hidden value between 1 - 12.
 
-$( document ).ready(function (){
-
 // --- Variables ---
 
 var targetScore = 0; 
@@ -16,7 +14,6 @@ var crystalArray = [
     "assets/images/crystal-3.jpg",
     "assets/images/crystal-4.jpg"
 ];
-
 
 // --- Functions ---
 
@@ -87,7 +84,5 @@ $(".crystal-img").on("click", function () {
         $("#losses-text").text(losses);
         resetGame();
     }
-
-});
 
 });
