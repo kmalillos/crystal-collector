@@ -2,7 +2,7 @@
 <html lang="en us">
 
 <head>
-    <title>Crystal Collector by Kaylah Malillos</title>
+    <title>Crystal Collector</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/images/favicon.png">
@@ -12,54 +12,50 @@
 
 <body>
 
-<div class="wrapper header-bkgd"> 
-    <h1>Crystal Collector</h1>
+    <div class="wrapper header-bkgd">
+        <h1>Crystal Collector</h1>
 
-    <br><br>
+        <br><br>
 
-    <p> The four crystals below have random Crystal Value between 1 and 12. 
-        Selecting a crystal will increase User Score by its value. 
-        Match exactly the total User Score to the Target Score to win!
-        The Target Score and Crystal Values will have new updated values after each round. </p>
-</div>
-    
-<div class="wrapper section-bkgd" id="crystals">
-    <!-- JS will fill images here -->
-</div>
-
-
-<div class="wrapper section-bkgd">
-    <div class="box"> 
-        <h4 class="sans-font">Target Score: <span id="targetScore-text"></span> </h2>
-        <h4 class="sans-font">User Score: <span id="userScore-text">0</span> </h2>
+        <p> The four crystals below have random Crystal Value between 1 and 12.
+            Selecting a crystal will increase User Score by its value.
+            Match exactly the total User Score to the Target Score to win!
+            The Target Score and Crystal Values will have new updated values after each round. </p>
     </div>
-    
-    <div class="box">
-        <h4 class="sans-font">Wins: <span id="wins-text">0</span> </h2>
-        <h4 class="sans-font">Losses: <span id="losses-text">0</span> </h2>
+
+    <div class="wrapper section-bkgd" id="crystals">
+        <!-- JS will fill images here -->
     </div>
-</div>
-
-<br><hr><br>
 
 
-<!-- FOOTER -->
-<footer class="sticky-footer footer-style">
-    <h4>Crystal Collector | by Kaylah Malillos</h4>
-    <p class="sans-font">
-        <a href="https://github.com/kmalillos/crystal-collector" target="_blank">GitHub Repo</a> 
-        | 
-        <a href="https://kmalillos.github.io/" target="_blank">Portfolio</a>
-    </p>
-</footer>
+    <div class="wrapper section-bkgd">
+        <div class="box">
+            <h4 class="sans-font">Target Score: <span id="targetScore-text"></span> </h2>
+                <h4 class="sans-font">User Score: <span id="userScore-text">0</span> </h2>
+        </div>
 
+        <div class="box">
+            <h4 class="sans-font">Wins: <span id="wins-text">0</span> </h2>
+                <h4 class="sans-font">Losses: <span id="losses-text">0</span> </h2>
+        </div>
+    </div>
 
-<!-- JAVASCRIPT -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js">
-</script>
+    <!-- FOOTER -->
+    <footer class="sticky-footer">
+        <p class=" footer-style">
+            <strong>Kaylah Malillos - Crystal Collector</strong> <br>
+            <a href="https://github.com/kmalillos/crystal-collector" target="_blank">GitHub Repo</a>
+            |
+            <a href="https://kmalillos.github.io/" target="_blank">Portfolio</a>
+        </p>
+    </footer>
 
-<script type="text/javascript" src="assets/javascript/game.js">
-</script>
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
 
 </body>
 

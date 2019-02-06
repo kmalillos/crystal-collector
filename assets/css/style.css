@@ -80,7 +80,6 @@ p {
     border: 1px solid#808080;
 }
 
-
 .sticky-footer {
     /* display: block; */
     position: fixed;
@@ -93,8 +92,10 @@ p {
 .footer-style {
     background-color: #fff;
     border-top: 3px double #000;
+    opacity: 0.75;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
     text-align: center;
-    font-weight: bold;
-    padding: 10px;
     margin-top: 25px;
+    padding: 10px;
 }
