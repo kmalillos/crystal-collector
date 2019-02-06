@@ -2,7 +2,7 @@
 
 Collecting crystals? Easy. The challenge?  Each crystal has a different random value. The User must collect his or her crystals wisely to try to reach the 'Target Score'!
 
-### Live Page: [Link](https://kmalillos.github.io/unit-4-game/)
+### Try It Out: [Live Page Here](https://kmalillos.github.io/crystal-collector/)
 
 ![Image](https://github.com/kmalillos/unit-4-game/blob/master/assets/images/read-me/readme-pic.JPG)
 
@@ -26,16 +26,16 @@ Collecting crystals? Easy. The challenge?  Each crystal has a different random v
 ### CSS:
 
 * CSS Reset from Meyer Web ([Link](http://meyerweb.com/eric/tools/css/reset/)) is used to reset the default styling of all HTML elements to a consistent baseline in order to better customize CSS
-* Background Image from PixaVay ([Link](https://pixabay.com/))
+* Background Image from PixaBay ([Link](https://pixabay.com/))
 
 ### JavaScript / jQuery:
 
 * Created *global variables* to store values
-* 'crystalArray' stores the images used to visually represent crystals
+* 'crystalArray' stores the image sources used to visually represent crystals on the page
 
 ![Image](https://github.com/kmalillos/unit-4-game/blob/master/assets/images/read-me/readme-1.JPG)
 
-* *function* 'createCrystals' uses a *for loop* that iterates through the *array* 'crystalArray' to dynamically create image elements in HTML
+* *Function* 'createCrystals' uses a *for loop* that iterates through the *array* 'crystalArray' to dynamically create image elements in HTML
 * *Local variable* 'randomVal' is assigned to a random number between 1 and 12 (this will later represent the crystal value) using an equation that includes build-in JavaScript functions
     - Math.random() is a function that returns a random, floating-point number between 0 and 1
     - Multiplying Math.random() by 12, then adding 1, gets a random, floating-point value from 1 to 13
@@ -67,7 +67,8 @@ Collecting crystals? Easy. The challenge?  Each crystal has a different random v
 ![Image](https://github.com/kmalillos/unit-4-game/blob/master/assets/images/read-me/readme-5.JPG)
 
 * Upon page load, the Crystal Images appear and the Target Score is randomly selected when the *functions* 'createCrystals' and 'targetScoreSelector' are called.
-<!-- event listener info here -->
+* *Event Listener* on "click" (click of computer mouse) on the *class* 'crystal-img' (all crystal images are assigned this class)
+<!-- Describe on-click event -->
 * Note: When the game resets, *function* 'createCrystals' is not called because the crystal images are already created. 
 
 ![Image](https://github.com/kmalillos/unit-4-game/blob/master/assets/images/read-me/readme-6.JPG)
