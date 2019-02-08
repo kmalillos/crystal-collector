@@ -2,7 +2,7 @@
 
 Collecting crystals? Easy. The challenge?  Each crystal has a different random value. The User must collect his or her crystals wisely to try to reach the 'Target Score'!
 
-### Try It Out: [Live Page Here](https://kmalillos.github.io/crystal-collector/)
+### Try It Out: [Live Page Here](https://kmalillos.github.io/crystal-game/)
 
 ![Image](https://github.com/kmalillos/unit-4-game/blob/master/assets/images/read-me/readme-pic.JPG)
 
